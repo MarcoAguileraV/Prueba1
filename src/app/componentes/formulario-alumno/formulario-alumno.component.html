@@ -1,0 +1,37 @@
+<section>
+  <h1>DATOS ALUNMO</h1>
+  <fieldset>
+    <label for="">Rut Alumno</label>
+    <input type="text" name="rutAlumno" [value]="alumno.rut" (input)="guardarRut($event)">
+  </fieldset>
+  <fieldset>
+    <label for="">Nombre: </label>
+    <input type="text" name="nombreAlumno"  [value]="alumno.nombre" (input)="guardarNombre($event)">
+  </fieldset>
+
+  <fieldset>
+    <label for="">Apellido: </label>
+    <input type="text" name="apellidoAlumno" [value]="alumno.apellido" (input)="guardarApellido($event)">
+  </fieldset>
+
+  <fieldset>
+    <label for="">edad: </label>
+    <input type="text" name="edadAlumno" [value]="alumno.edad" (input)="guardarEdad($event)">
+  </fieldset>
+
+  <fieldset>
+    <label for="">Seccion:  </label>
+    <select name="seccionAlumno"  [value]="alumno.seccion" (input)="guardarSeccion($event)">
+      <option [value]="seccion.seccion">{{seccion.seccion}}</option>
+      <option value="006D">006D</option>
+      <option value="007D">007D</option>
+      <option value="008D">008D</option>
+    </select>
+  </fieldset>
+
+
+  <fieldset>
+    <button (click)="guardarAlumno()">Guardar</button>
+  </fieldset>
+</section>
+<br><br>

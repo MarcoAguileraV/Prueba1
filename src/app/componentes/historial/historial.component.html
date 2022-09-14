@@ -1,0 +1,32 @@
+<article>
+
+  <fieldset>
+    <fieldset>
+      <h2>Rut:  </h2>
+      <h4>{{alumno.rut}}</h4>
+    </fieldset>
+
+    <fieldset>
+      <h2>Nombre Alumno:  </h2>
+      <h4>{{alumno.nombre | uppercase}} {{alumno.apellido | lowercase}}</h4>
+    </fieldset>
+
+
+    <fieldset>
+      <h2>Edad Alumno:  </h2>
+      <h4>{{alumno.edad}}</h4>
+    </fieldset>
+
+    <fieldset>
+      <h2>Seccion Alumno: </h2>
+      <h3>{{alumno.seccion}}</h3>
+    </fieldset>
+
+    <fieldset>
+      <h2>Fecha registro: </h2>
+      <h3>{{fecha | date: 'dd/MM/yyy, hh:mm:ss' }}</h3>
+    </fieldset>
+    <br><br>
+  </fieldset>
+
+</article>

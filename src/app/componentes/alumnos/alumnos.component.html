@@ -1,0 +1,25 @@
+<article [id]="alumno.idPk">
+  <fieldset>
+    <h2>Rut Alumno</h2>
+    <h3>{{alumno.rut}}</h3>
+  </fieldset>
+
+  <fieldset>
+    <h2>Nombre Alumno</h2>
+    <h3>{{alumno.nombre | uppercase}} {{alumno.apellido | lowercase}}</h3>
+  </fieldset>
+
+
+  <fieldset>
+    <h2>Edad Alumno</h2>
+    <h3>{{alumno.edad}}</h3>
+  </fieldset>
+
+  <fieldset>
+    <h2>Seccion Alumno</h2>
+    <h3>{{alumno.seccion | uppercase}}</h3>
+  </fieldset>
+
+  <br><br>
+
+</article>

@@ -1,0 +1,11 @@
+<section>
+  <h1>Seccion</h1>
+  <fieldset>
+      <h3>Ingrese las siglas de la seccion</h3>
+      <input type="text" name="seccion" [value]="seccion.seccion" (input)="guardarSeccion($event)">
+  </fieldset>
+
+  <fieldset>
+    <button (click)="guardarSecciones()">Guardar</button>
+  </fieldset>
+</section>
